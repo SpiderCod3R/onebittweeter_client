@@ -5,17 +5,19 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-materialize": "^3.4.1",
     "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn sass:build &&  react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "sass:build": "sass — update src/styles/scss:src/styles/css",
   "browserslist": {
     "production": [
       ">0.2%",
