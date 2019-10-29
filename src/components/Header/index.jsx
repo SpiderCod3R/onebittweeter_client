@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, NavItem, Row, Icon } from 'react-materialize';
 
 import logo from '../../images/logo.png';
-import './index.css';
+import './index.scss';
 
 const Header = () => (
   <Row>
