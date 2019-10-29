@@ -7,7 +7,7 @@ import './index.css';
 const Header = () => (
   <Row>
     <Navbar brand={<img src={logo} alt="OneBitTwitter"
-      className="responsive-img col m6 center logo" />} right className="navbar">
+      className="responsive-img col m2 logo" />} alignLinks="right" className="navbar">
       <NavItem href='/logout'>
         Logout
       </NavItem>

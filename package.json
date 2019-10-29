@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "materialize-css": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-materialize": "^3.4.1",
@@ -10,14 +11,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "yarn sass:build &&  react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "sass:build": "sass — update src/styles/scss:src/styles/css",
   "browserslist": {
     "production": [
       ">0.2%",
