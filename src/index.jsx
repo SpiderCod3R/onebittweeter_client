@@ -4,9 +4,20 @@ import './stylesheets/scss/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const Reducers = combineReducers({
+  trendings: () => ({ hashtags: [['#OneBitCode', '100k'], ['#RubyOnRails', '10k']] })
+});
+
+const Store = createStore(Reducers);
+
+ReactDOM.render(
+  <Provider store={Store}>
+    <App />
+  </Provider>
+  , document.getElementById('root')
+);
+
 serviceWorker.unregister();
