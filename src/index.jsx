@@ -6,9 +6,10 @@ import * as serviceWorker from './serviceWorker';
 
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import TrendingTopicsReducer from './containers/TrendingTopicsContainer/reducer.jsx';
 
 const Reducers = combineReducers({
-  trendings: () => ({ hashtags: [['#OneBitCode', '100k'], ['#RubyOnRails', '10k']] })
+  trendings: TrendingTopicsReducer
 });
 
 const Store = createStore(Reducers);
