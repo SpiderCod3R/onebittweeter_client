@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import logo from '../../images/logo.png';
 
 const NavbarBlue = styled(Navbar)`
-  background-color: #75d3f4;`
+  background-color: #4D7BEB;`
 ;
 
 const Logo = styled.img`
