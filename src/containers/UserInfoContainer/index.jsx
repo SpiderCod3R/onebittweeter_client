@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import UserInfo from '../../components/UserInfo'
-import photo from '../../images/fake_avatar.png';
+import photo from '../../images/fake_avatar2.png';
 
 class UserInfoContainer extends Component {
   constructor(props) {
