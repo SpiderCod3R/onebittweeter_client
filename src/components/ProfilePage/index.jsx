@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from 'react-materialize';
-import MainLayout from '../MainLayout'
 import UserInfoContainer from '../../containers/UserInfoContainer'
+import MainLayout from '../MainLayout'
 
 const ProfilePage = () => (
   <MainLayout>
@@ -11,10 +11,10 @@ const ProfilePage = () => (
       </Col>
       <Col s={12} m={6}>
         Tweet List
-      </Col>
+     </Col>
       <Col s={12} m={3}>
         Trending Topics
-      </Col>
+     </Col>
     </Row>
   </MainLayout>
 );

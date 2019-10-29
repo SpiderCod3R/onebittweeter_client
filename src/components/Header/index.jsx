@@ -18,7 +18,7 @@ const IconUser = styled(Icon)`
 const Header = () => (
   <Row>
     <NavbarBlue brand={<Logo src={logo} alt="OneBitTwitter"
-      className="responsive-img col m2 logo" />} alignLinks="right" className="navbar">
+      className="responsive-img col m6 center logo" />} right className="navbar">
       <NavItem href='/logout'>
         Logout
       </NavItem>
