@@ -6,7 +6,10 @@ export function getHashtags() {
 
   return (dispatch) => {
     request.then(
-      resp => dispatch({ type: UPDATE_TRENDINGS, payload: resp.data }),
+      resp => dispatch({
+        type: UPDATE_TRENDINGS,
+        payload: resp.data
+      }),
       error => window.Materialize.toast('Fetch error', 4000, 'red')
     );
   };

@@ -3,10 +3,10 @@ import Reducers from './reducers';
 import thunk from 'redux-thunk';
 
 // Routes imports
-import createHistory from 'history/createBrowserHistory'
+import { createBrowserHistory } from 'history'
 import { routerMiddleware } from 'react-router-redux'
 
-export const history = createHistory()
+export const history = createBrowserHistory()
 const history_middleware = routerMiddleware(history)
  // End routes imports
 

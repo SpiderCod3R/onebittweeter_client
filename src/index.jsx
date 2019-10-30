@@ -9,9 +9,7 @@ import { ConnectedRouter } from 'react-router-redux'
 
 ReactDOM.render(
   <Provider store={Store}>
-    <ConnectedRouter history={history}>
-      <App />
-    </ConnectedRouter>
+    <App />
   </Provider>
   , document.getElementById('root')
 );

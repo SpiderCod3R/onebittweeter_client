@@ -1,6 +1,4 @@
-import { UPDATE_TRENDINGS } from './constants'
-
-// The initial state of the App
+import { UPDATE_TRENDINGS } from './constants';
 const initialState = { hashtags: [] };
 
 export default function (state = initialState, action) {
