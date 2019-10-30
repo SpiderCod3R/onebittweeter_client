@@ -7,14 +7,16 @@ import './stylesheets/scss/index.scss';
 import App from './App';
 import * as serviceWorker from './config/serviceWorker';
 import configureStore, { history } from './config/store.config';
+import FooterGrey from './components/Footer';
+
 
 const store = configureStore()
 
 ReactDOM.render(
   <Provider store={store}>
-   <ConnectedRouter history={history}>
-     <App/>
-   </ConnectedRouter>
+    <ConnectedRouter history={history}>
+      <App/>
+    </ConnectedRouter>
   </Provider>
   , document.getElementById('root')
 );

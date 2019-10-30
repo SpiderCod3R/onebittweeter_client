@@ -7,19 +7,21 @@ import TrendingTopicsContainer from '../../containers/TrendingTopicsContainer'
 
 
 const ProfilePage = () => (
-  <MainLayout>
-    <Row>
-      <Col s={12} m={3}>
-        <UserInfoContainer />
-      </Col>
-      <Col s={12} m={6}>
-        <TweetListContainer />
-      </Col>
-      <Col s={12} m={3}>
-        <TrendingTopicsContainer />
-      </Col>
-    </Row>
-  </MainLayout>
+  <main>
+    <MainLayout>
+      <Row>
+        <Col s={12} m={3}>
+          <UserInfoContainer />
+        </Col>
+        <Col s={12} m={6}>
+          <TweetListContainer />
+        </Col>
+        <Col s={12} m={3}>
+          <TrendingTopicsContainer />
+        </Col>
+      </Row>
+    </MainLayout>
+  </main>
 );
 
 export default ProfilePage;

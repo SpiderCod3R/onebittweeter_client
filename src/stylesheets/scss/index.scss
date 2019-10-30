@@ -1,23 +1,48 @@
 html, body { 
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  padding: auto;
+  margin: auto;
+  background: #4BB7FF;
+  overflow: initial;
+}
+main{
+  background: #f6f4fa !important;
+  height: 100% !important;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  
+  #root{
+    height: inherit;
+    background-repeat: repeat;
 
-#root{
-  min-height: 100%;
-  height: 100% !important;
-}
+    .UserHighForm{
+      margin-top: -18%;
+      .SignUPForm{
+        margin-top: -10%;
+      }
+    }
+  }
 
-#root > div{
-  height: 100% !important;
+  #root > div{
+    height: inherit;
+  }
+  
+  @media (max-height: 414px) 
+  {
+    .UserHighForm{
+      margin-top: 1% !important;
+    }
+  }
+
+  @media (max-height: 736px) 
+  {
+    .UserHighForm{
+      margin-top: 2% !important;
+    }
+  }
 }
