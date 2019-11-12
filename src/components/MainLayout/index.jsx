@@ -3,11 +3,11 @@ import Header from '../Header';
 import { Container } from 'react-materialize';
 
 const MainLayout = (props) => (
-  <div>
+  <body id="mainLayout">
     <Header />
     <Container>
       { props.children }
     </Container>
-  </div>
+  </body>
 )
 export default MainLayout;
