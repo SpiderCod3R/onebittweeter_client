@@ -7,7 +7,6 @@ import './stylesheets/scss/index.scss';
 import App from './App';
 import * as serviceWorker from './config/serviceWorker';
 import configureStore, { history } from './config/store.config';
-import FooterGrey from './components/Footer';
 
 
 const store = configureStore()
