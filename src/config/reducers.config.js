@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import { connectRouter } from 'connected-react-router'
 import TrendingTopicsReducer from '../containers/TrendingTopicsContainer/reducer.jsx';
+import CurrentUserReducer from '../containers/Auth/reducer.jsx';
 
-const createRootReducer = (history) => combineReducers({
-  router: connectRouter(history),
-  trendings: TrendingTopicsReducer
+const rootReducer = combineReducers({
+  trendings: TrendingTopicsReducer,
+  current_user: CurrentUserReducer,
 })
 
-export default createRootReducer;
+export default rootReducer;

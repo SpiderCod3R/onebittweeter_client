@@ -11,9 +11,9 @@ const BigTitle = styled.p`
 const Hashtag = (props) => (
   <RowNoBottomMargin>
     <Col s={9}>
-      <a href="#">
+      <button href="#">
         <BigTitle>{props.title}</BigTitle>
-      </a>
+      </button>
     </Col>
     <Col s={2}>
       <b>{props.count}</b>

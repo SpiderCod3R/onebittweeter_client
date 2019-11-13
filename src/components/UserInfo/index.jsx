@@ -36,7 +36,7 @@ const UserInfo = (props) => (
       </Row>
       <RowNoBottomMargin>
         <Col m={4}>
-          <a href="#" className="grey-text text-darken-2">
+          <button className="grey-text text-darken-2">
             <RowNoBottomMargin className="tooltipped" data-tooltip="Tweets">
               <Col m={5}>
                 <Icon>message</Icon>
@@ -45,10 +45,10 @@ const UserInfo = (props) => (
                 {props.tweets}
               </Col>
             </RowNoBottomMargin>
-          </a>
+          </button>
         </Col>
         <Col m={4}>
-          <a href="#" className="grey-text text-darken-2">
+          <button className="grey-text text-darken-2">
             <RowNoBottomMargin className="tooltipped" data-tooltip="Followers">
               <Col m={5}>
                 <Icon>people</Icon>
@@ -57,10 +57,10 @@ const UserInfo = (props) => (
                 {props.followers}
               </Col>
             </RowNoBottomMargin>
-          </a>
+          </button>
         </Col>
         <Col m={4}>
-          <a href="#" className="grey-text text-darken-2">
+          <button className="grey-text text-darken-2">
             <RowNoBottomMargin className="tooltipped" data-tooltip="Followed">
               <Col m={5}>
                 <Icon>people_outline</Icon>
@@ -69,7 +69,7 @@ const UserInfo = (props) => (
                 {props.follow}
               </Col>
             </RowNoBottomMargin>
-          </a>
+          </button>
         </Col>
       </RowNoBottomMargin>
     </Card>

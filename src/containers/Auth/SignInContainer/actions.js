@@ -1,4 +1,3 @@
-import axios from 'axios';
 import API_PATH from '../../../config/api.config';
 import { push } from 'react-router-redux'
 
