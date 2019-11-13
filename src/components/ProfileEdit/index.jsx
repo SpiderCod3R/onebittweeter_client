@@ -18,7 +18,15 @@ const ProfileEdit = (props) => (
             <Col m={12} s={12} offset="">
               <div className="form">
                 <div>
-                  <LocalForm onSubmit={(values) => props.updateProfile(values)}>
+                  <LocalForm onSubmit={(values) => props.updateProfile(values)}
+                    initialState={{
+                      name: props.name,
+                      email: props.email,
+                      description: props.description,
+                      id: props.id,
+                    }}
+                  >
+
                     <Control.text model=".name"
                       name="name"
                       placeholder="Name"
@@ -50,7 +58,11 @@ const ProfileEdit = (props) => (
             <Col m={12} s={12} offset="">
               <div className="form">
                 <div>
-                  <LocalForm onSubmit={(values) => props.updatePassword(values)}>
+                  <LocalForm onSubmit={(values) => props.updatePassword(values)}
+                    initialState={{
+                      id: props.id,
+                    }}
+                  >
                     <Control.text model=".password"
                       name="password"
                       placeholder="Password"
