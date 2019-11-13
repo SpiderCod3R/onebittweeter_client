@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   padding: auto;
   margin: auto;
-  background: #4BB7FF;
   overflow: initial;
 }
 
@@ -27,7 +26,7 @@ body {
     background-repeat: repeat;
 
     .UserHighForm{
-      margin-top: -18%;
+      margin-top: -18% !important;
       .SignUPForm{
         margin-top: -10%;
       }
@@ -37,18 +36,15 @@ body {
   #root > div{
     height: inherit;
   }
-  
-  @media (max-height: 414px) 
-  {
-    .UserHighForm{
-      margin-top: 1% !important;
-    }
-  }
+}
 
-  @media (max-height: 736px) 
-  {
-    .UserHighForm{
-      margin-top: 2% !important;
+@media (max-width: 414px) 
+{
+  body {
+    #root{
+      .UserHighForm{
+        margin-top: 2% !important;
+      }
     }
   }
 }

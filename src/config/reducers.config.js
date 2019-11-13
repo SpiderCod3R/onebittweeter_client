@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import TrendingTopicsReducer from '../containers/TrendingTopicsContainer/reducer.jsx';
-import CurrentUserReducer from '../containers/Auth/reducer.jsx';
+import TrendingTopicsReducer from '../containers/TrendingTopicsContainer/reducer';
+import CurrentUserReducer from '../containers/Auth/reducer';
 
 const rootReducer = combineReducers({
   trendings: TrendingTopicsReducer,

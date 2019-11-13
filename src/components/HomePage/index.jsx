@@ -40,12 +40,12 @@ const HomePage = () => (
           </Row>
         </Col>
         <Col s={12} m={8} offset="m2 l2" l={4}>
-          <section className="UserHighForm">
+          <div className="UserHighForm">
             <SignInContainer/>
-            <section className="SignUPForm">
+            <div className="SignUPForm">
               <SignUpContainer/>
-            </section>
-          </section>
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
