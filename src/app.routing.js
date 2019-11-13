@@ -5,6 +5,7 @@ import HomePageContainer from './containers/HomePageContainer'
 import ProfilePageContainer from './containers/ProfilePageContainer'
 import TimelineContainer from './containers/TimelineContainer'
 import PrivateRoute from './containers/Auth/PrivateRoute'
+import ProfileEditContainer from './containers/ProfileEditContainer'
 
 
 class AppRouting extends Component {
@@ -15,6 +16,7 @@ class AppRouting extends Component {
           <Route exact path="/" component={HomePageContainer} />
           <PrivateRoute exact path="/user/:id" component={ProfilePageContainer} />
           <PrivateRoute exact path="/timeline" component={TimelineContainer} />
+          <PrivateRoute exact path="/user/:id/edit" component={ProfileEditContainer} />
         </Switch>
       </div>
     );

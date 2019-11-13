@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import InvisibleButton from '../../components/common/InvisibleButton';
 import { Icon } from 'react-materialize';
 
-
 class UserUnFollow extends Component {
   unfollow() {
     console.log('unfollow')
